@@ -705,7 +705,7 @@ addEventListener("mouseover",function(e){
 
 /* ---------------- Deck ---------------- */
 var stage=$("#stage");
-function fit(){var s=Math.min(innerWidth/1600,innerHeight/900);stage.style.transform="translate(-50%,-50%) scale("+s+")";}
+function fit(){var s=Math.min(innerWidth/1600,innerHeight/900);if(!(s>0))s=1;stage.style.transform="translate(-50%,-50%) scale("+s+")";}
 addEventListener("resize",fit); fit();
 
 var slides=$$(".slide"), N=slides.length, i=0, busy=false;
