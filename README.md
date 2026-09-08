@@ -31,30 +31,6 @@ O botão **Baixar PDF** usa a impressão do navegador (9 páginas, 1600×900 pai
 - Tela 08: alternador **Contempla / Não contempla**
 - Botões de CTA saltam entre telas (`data-go="N"`, índice base zero)
 
-## Espaços de render
-
-Duas caixas tracejadas marcadas `RENDER`:
-
-- Tela 06 — **Árvore de potes FTW**
-- Tela 07 — **Loja-modelo · Collab**
-
-**Durante a apresentação:** clique na caixa e escolha uma imagem do computador — ela
-entra na hora (não fica salva).
-
-**Para fixar no arquivo:** no `index.html`, procure `class="slot"` e troque a linha
-
-```html
-<img alt="Render da árvore de potes FTW">
-```
-
-por
-
-```html
-<img src="renders/arvore-natal.png" alt="Render da árvore de potes FTW">
-```
-
-e adicione a classe `filled` na `div` do slot: `class="slot filled"`.
-
 ## Marca
 
 - **FTW** — preto `#08080A`, vermelho de marca `#E1091E` (amostrado das embalagens e do
